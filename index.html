@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B🐝 mylyf - Premium African Honey in Qatar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .bee-icon {
+            display: inline-block;
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin: 0 2px;
+            animation: beeFloat 3s ease-in-out infinite;
+        }
+        
+        .bee-icon::before {
+            content: '🐝';
+            font-size: 20px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            display: block;
+            transform: scale(1.1);
+        }
+        
+        .bee-icon::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #FFD700 30%, #FFA500 70%);
+            border-radius: 50%;
+            animation: beeGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes beeFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-2px) rotate(1deg); }
+            50% { transform: translateY(-1px) rotate(0deg); }
+            75% { transform: translateY(-3px) rotate(-1deg); }
+        }
+        
+        @keyframes beeGlow {
+            0% { opacity: 0.7; transform: translateX(-50%) scale(1); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.2); }
+        }
+        
+        .nav-logo .bee-icon {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .nav-logo .bee-icon::before {
+            font-size: 24px;
+        }
+        
+        .footer-logo .bee-icon {
+            width: 26px;
+            height: 26px;
+        }
+        
+        .footer-logo .bee-icon::before {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-honey-pot"></i>
+                <span>B<span class="bee-icon"></span> mylyf</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Premium African Honey</h1>
+                <h2 class="hero-subtitle">Imported Fresh to Qatar</h2>
+                <p class="hero-description">
+                    Experience the purest, most authentic African honey, carefully sourced and imported directly to Qatar. 
+                    Our commitment to quality ensures you get the finest honey nature has to offer.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="honey-jar">
+                    <i class="fas fa-honey-pot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Honey Collection</h2>
+                <p class="section-subtitle">Authentic African honey varieties, imported fresh to Qatar</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-honey-pot"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wild Acacia Honey</h3>
+                        <p class="product-description">Pure wild acacia honey from the savannas of East Africa. Light, floral, and perfect for daily use.</p>
+                        <div class="product-price">QAR 45</div>
+                        <button class="btn btn-product">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-honey-pot"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Manuka Honey</h3>
+                        <p class="product-description">Premium Manuka honey with natural antibacterial properties. Sourced from South African regions.</p>
+                        <div class="product-price">QAR 85</div>
+                        <button class="btn btn-product">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-honey-pot"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Forest Honey</h3>
+                        <p class="product-description">Rich, dark forest honey from the tropical forests of Central Africa. Deep flavor and natural sweetness.</p>
+                        <div class="product-price">QAR 55</div>
+                        <button class="btn btn-product">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-honey-pot"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Orange Blossom Honey</h3>
+                        <p class="product-description">Delicate orange blossom honey from North African citrus groves. Light and aromatic.</p>
+                        <div class="product-price">QAR 50</div>
+                        <button class="btn btn-product">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About B<span class="bee-icon"></span> mylyf</h2>
+                    <p class="about-description">
+                        B<span class="bee-icon"></span> mylyf is Qatar's premier destination for authentic African honey. We specialize in importing 
+                        the finest honey varieties directly from trusted beekeepers across Africa, ensuring freshness 
+                        and quality in every jar.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Fresh Import</h4>
+                            <p>Direct import from African beekeepers to Qatar</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Quality Assured</h4>
+                            <p>100% pure, natural honey with quality certification</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Health Benefits</h4>
+                            <p>Natural antibacterial and antioxidant properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="honey-comb">
+                        <i class="fas fa-honey-pot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for orders and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Doha, Qatar</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+974 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@beemylyf.qa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Sat-Thu: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-honey-pot"></i>
+                    <span>B<span class="bee-icon"></span> mylyf</span>
+                </div>
+                <p class="footer-text">Premium African Honey in Qatar</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 B<span class="bee-icon"></span> mylyf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
