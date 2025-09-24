@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B🐝 mylyf - Premium African Honey from Kenya</title>
+    <title>TopBrandSuppliers — Bee MyLyf Branch | Premium African Honey from Kenya</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -104,7 +104,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-honey-pot"></i>
-                <span>B<span class="bee-icon"></span> mylyf</span>
+                <span>TopBrandSuppliers<br>B<span class="bee-icon"></span> mylyf</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -132,6 +132,21 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <div class="nav-actions">
+                <button class="cart-button" aria-label="Open cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" data-cart-count>0</span>
+                </button>
+                <div class="account-actions" data-account-area>
+                    <button class="btn btn-secondary btn-login" data-open-login>Login</button>
+                    <button class="btn btn-primary btn-signup" data-open-signup>Create Account</button>
+                </div>
+                <div class="account-summary hidden" data-account-summary>
+                    <span class="account-name" data-account-name></span>
+                    <button class="btn btn-secondary" data-open-admin style="display:none">Admin</button>
+                    <button class="btn btn-secondary btn-logout" data-logout>Logout</button>
+                </div>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -310,7 +325,7 @@
                 <div class="impact-text">
                     <h3>Empowering Local Communities</h3>
                     <p>
-                        B<span class="bee-icon"></span> mylyf is committed to supporting sustainable beekeeping practices across Africa. 
+                        B<span class="bee-icon"></span> mylyf, a branch of TopBrandSuppliers, is committed to supporting sustainable beekeeping practices across Africa. 
                         We work directly with local beekeepers, ensuring fair trade practices and community development.
                     </p>
                     <div class="impact-stats">
@@ -385,9 +400,9 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="section-title">About B<span class="bee-icon"></span> mylyf</h2>
+                    <h2 class="section-title">About B<span class="bee-icon"></span> mylyf — a branch of TopBrandSuppliers</h2>
                     <p class="about-description">
-                        B<span class="bee-icon"></span> mylyf is Kenya's premier honey company, bringing authentic African honey to the world. We specialize in sourcing 
+                        B<span class="bee-icon"></span> mylyf is a branch of TopBrandSuppliers, Kenya's premier supplier bringing authentic African honey to the world. We specialize in sourcing 
                         the finest honey varieties directly from trusted beekeepers across Kenya and Africa, ensuring freshness 
                         and quality in every jar.
                     </p>
@@ -481,7 +496,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <i class="fas fa-honey-pot"></i>
-                    <span>B<span class="bee-icon"></span> mylyf</span>
+                    <span>TopBrandSuppliers<br>B<span class="bee-icon"></span> mylyf</span>
                 </div>
                 <p class="footer-text">Premium African Honey from Kenya</p>
                 <div class="social-links">
@@ -492,10 +507,131 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 B<span class="bee-icon"></span> mylyf. All rights reserved.</p>
+                <p>&copy; 2024 TopBrandSuppliers — Bee MyLyf branch. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart" data-cart-close>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" data-cart-items>
+            <!-- Items injected here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <span>Subtotal</span>
+                <strong data-cart-subtotal>$0.00</strong>
+            </div>
+            <button class="btn btn-primary cart-checkout" disabled data-cart-checkout>Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Auth Modals -->
+    <div class="modal-overlay" data-modal-overlay></div>
+
+    <div class="modal auth-modal" data-modal="login" aria-hidden="true">
+        <div class="modal-header">
+            <h3>Login</h3>
+            <button class="modal-close" data-modal-close aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <form class="modal-body" data-login-form>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Login</button>
+            <p style="margin-top:10px; text-align:center; font-size: 0.9rem;">Don't have an account? <a href="#" data-switch-to-signup>Sign up</a></p>
+        </form>
+    </div>
+
+    <div class="modal auth-modal" data-modal="signup" aria-hidden="true">
+        <div class="modal-header">
+            <h3>Create Account</h3>
+            <button class="modal-close" data-modal-close aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <form class="modal-body" data-signup-form>
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password (min 6 chars)" minlength="6" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Create Account</button>
+            <p style="margin-top:10px; text-align:center; font-size: 0.9rem;">Already have an account? <a href="#" data-switch-to-login>Login</a></p>
+        </form>
+    </div>
+
+    <!-- Admin Modal -->
+    <div class="modal admin-modal" data-modal="admin" aria-hidden="true">
+        <div class="modal-header">
+            <h3>Admin Panel</h3>
+            <button class="modal-close" data-modal-close aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="users">Registered Users</button>
+                <button class="tab-btn" data-tab="purchases">Purchases</button>
+                <button class="tab-btn" data-tab="exports">Data Exports</button>
+            </div>
+            
+            <div class="tab-content" data-tab-content="users">
+                <div class="admin-table-container">
+                    <table class="admin-table" data-users-table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Registered</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Users will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" data-tab-content="purchases">
+                <div class="admin-table-container">
+                    <table class="admin-table" data-purchases-table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Items</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Purchases will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" data-tab-content="exports">
+                <div class="form-group" style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                    <button class="btn btn-primary" data-export-products>Download Products.txt</button>
+                    <button class="btn btn-primary" data-export-customers>Download Customers.txt</button>
+                    <button class="btn btn-primary" data-export-purchases>Download Purchases.txt</button>
+                    <button class="btn btn-primary" data-export-admins>Download Admins.txt</button>
+                </div>
+                <p style="font-size:0.9rem; color:#666;">Exports are generated from current site data and your browser's storage.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
